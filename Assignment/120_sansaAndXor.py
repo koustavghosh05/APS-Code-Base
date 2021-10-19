@@ -1,10 +1,12 @@
 def getXor(arr,n):
-  res = arr[0]
-  for i in range(1,n):
-    if i % 2 == 0:
-      res = res ^ arr[i]
-  
-  return res
+  try:
+    res = arr[0]
+    for i in range(1,n):
+      if i % 2 == 0:
+        res = res ^ arr[i]
+
+    return res
+  except:pass
 
 def main():
   t = int(input())
